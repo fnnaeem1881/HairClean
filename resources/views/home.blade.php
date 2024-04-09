@@ -1,11 +1,9 @@
-
 @extends('layout.base')
 
 
 @section('content')
-
-     <!-- Carousel Start -->
-     <div class="container-fluid carousel-header px-0">
+    <!-- Carousel Start -->
+    {{-- <div class="container-fluid carousel-header px-0">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
@@ -14,43 +12,54 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="{{asset('assets')}}/img/carousel-3.jpg" class="img-fluid" alt="Image">
+                    <img src="{{ asset('assets') }}/img/carousel-3.jpg" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-primary text-uppercase mb-3">Spa & Beauty Center</h4>
                             <h1 class="display-1 text-capitalize text-dark mb-3">Massage Treatment</h1>
-                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna
+                                erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                                <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get
+                                    Start</a>
+                                <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book
+                                    Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('assets')}}/img/carousel-2.jpg" class="img-fluid" alt="Image">
+                    <img src="{{ asset('assets') }}/img/carousel-2.jpg" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center</h4>
+                            <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center
+                            </h4>
                             <h1 class="display-1 text-capitalize text-dark mb-3">Facial Treatment</h1>
-                            <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                            <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna
+                                erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                                <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get
+                                    Start</a>
+                                <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book
+                                    Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('assets')}}/img/carousel-1.jpg" class="img-fluid" alt="Image">
+                    <img src="{{ asset('assets') }}/img/carousel-1.jpg" class="img-fluid" alt="Image">
                     <div class="carousel-caption">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center</h4>
+                            <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center
+                            </h4>
                             <h1 class="display-1 text-capitalize text-dark">Cellulite Treatment</h1>
-                            <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                            <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna
+                                erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                             <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                                <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get
+                                    Start</a>
+                                <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book
+                                    Now</a>
                             </div>
                         </div>
                     </div>
@@ -65,21 +74,51 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Carousel End -->
 
-    <div class="container">
-        <!-- Default search bar with input group -->
-        <form action="">
-          <div class="input-group mb-4">
-            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon5" class="form-control">
-            <div class="input-group-append">
-              <button id="button-addon5" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+    <section id="ListShow" class="m-4">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Hair Cleaning">
+                        <button class="btn ">Search Service</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </form>
-        <!-- End of search bar -->
-      </div>
+        </div>
 
+        <div class="container mt-4">
+            @foreach ($data as $item)
+                @include('includes.list', ['item' => $item])
+            @endforeach
+            <script>
+                // JavaScript to handle single checkbox selection
+                const checkboxes = document.querySelectorAll('.time_checkbox');
+
+                checkboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', function() {
+                        if (this.checked) {
+                            const itemId = this.getAttribute('data-item-id');
+                            checkboxes.forEach(otherCheckbox => {
+                                if (otherCheckbox !== this && otherCheckbox.getAttribute('data-item-id') === itemId) {
+                                    otherCheckbox.checked = false;
+                                    otherCheckbox.parentElement.classList.remove('active');
+                                }
+                            });
+                        }
+                        const timeWrap = this.parentElement;
+                        if (this.checked) {
+                            timeWrap.classList.add('active');
+                        } else {
+                            timeWrap.classList.remove('active');
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </section>
 @endsection
