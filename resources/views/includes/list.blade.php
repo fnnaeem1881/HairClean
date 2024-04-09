@@ -1,6 +1,8 @@
 <div class="row mt-2">
-    <form action="#" method="post">
+    <form action="{{route('appoinment')}}" method="post">
         @csrf
+        <input type="hidden" class="d-none" value="{{ $item['email'] }}" name="email">
+        <input type="hidden" class="d-none" value="{{ $item['id'] }}" name="id">
         <div class="list_wrap" id="item_{{ $item['id'] }}">
             <div class="logo_des_wrap">
                 <div class="logo_sub_wrap">

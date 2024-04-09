@@ -1,38 +1,41 @@
 [
     {
-      "id": 1,
-      "logo": "assets/img/gallery-1.jpg",
-      "title": "Title 1",
-      "subtitle": "Subtitle 1",
-      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "time_schedule": [
-        "12:30 AM",
-        "01:30 PM",
-        "03:00 PM"
-      ]
+        "id": 1,
+        "logo": "assets/img/gallery-1.jpg",
+        "title": "Title 1",
+        "subtitle": "Subtitle 1",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "time_schedule": [
+            "12:30 AM",
+            "01:30 PM",
+            "03:00 PM"
+        ],
+        "email": "email1@example.com"
     },
     {
-      "id": 2,
-      "logo": "assets/img/gallery-2.jpg",
-      "title": "Title 2",
-      "subtitle": "Subtitle 2",
-      "paragraph": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "time_schedule": [
-        "10:00 AM",
-        "02:30 PM",
-        "05:00 PM"
-      ]
+        "id": 2,
+        "logo": "assets/img/gallery-2.jpg",
+        "title": "Title 2",
+        "subtitle": "Subtitle 2",
+        "paragraph": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "time_schedule": [
+            "10:00 AM",
+            "02:30 PM",
+            "05:00 PM"
+        ],
+        "email": "email2@example.com"
     },
     {
-      "id": 3,
-      "logo": "assets/img/gallery-3.jpg",
-      "title": "Title 3",
-      "subtitle": "Subtitle 3",
-      "paragraph": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "time_schedule": [
-        "09:00 AM",
-        "12:00 PM",
-        "04:30 PM"
-      ]
+        "id": 3,
+        "logo": "assets/img/gallery-3.jpg",
+        "title": "Title 3",
+        "subtitle": "Subtitle 3",
+        "paragraph": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "time_schedule": [
+            "09:00 AM",
+            "12:00 PM",
+            "04:30 PM"
+        ],
+        "email": "email3@example.com"
     }
-  ]
+]

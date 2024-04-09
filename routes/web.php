@@ -22,5 +22,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact_us');
 Route::get('/about-us', [HomeController::class, 'about_us'])->name('about_us');
+Route::post('/appoinment', [HomeController::class, 'appoinment'])->name('appoinment');
 Route::get('/stripe', [StripePaymentController::class, 'stripe']);
 Route::post('/stripe', [StripePaymentController::class, 'stripePost'])->name('stripe.post');
