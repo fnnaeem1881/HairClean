@@ -1,5 +1,5 @@
 <div class="row mt-2 mb-4">
-    <form action="{{route('appoinment')}}" method="post">
+    <form action="{{route('appoinment')}}" class="ListForm" method="post">
         @csrf
         <input type="hidden" class="d-none" value="{{ $item['email'] }}" name="email">
         <input type="hidden" class="d-none" value="{{ $item['id'] }}" name="id">

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Payment;
 
 use App\Http\Controllers\Controller;
+use App\Mail\PaymentConfirmation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Stripe;
 
@@ -102,7 +104,7 @@ class StripePaymentController extends Controller
                  ]
 
          ]);
-
+         Mail::to($item['email'])->send(new PaymentConfirmation($item, $time));
 
          Session::flash('success', 'Payment successful!');
 

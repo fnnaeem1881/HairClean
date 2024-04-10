@@ -107,6 +107,7 @@ svg {
             <script>
                 // JavaScript to handle single checkbox selection
                 const checkboxes = document.querySelectorAll('.time_checkbox');
+                const forms = document.querySelectorAll('.ListForm');
 
                 checkboxes.forEach(checkbox => {
                     checkbox.addEventListener('change', function() {
@@ -129,21 +130,24 @@ svg {
                 });
 
                 // JavaScript to handle form submission
-                // document.querySelector('form').addEventListener('submit', function(event) {
-                //     const checked = document.querySelectorAll('.time_checkbox:checked');
-                //     if (checked.length === 0) {
-                //         event.preventDefault(); // Prevent form submission if no time slot is selected
-                //         alert('Please select a time slot before booking an appointment.');
-                //     } else {
-                //         // Automatically deselect all other time slots if any time slot is selected
-                //         checkboxes.forEach(checkbox => {
-                //             if (!checkbox.checked) {
-                //                 checkbox.parentElement.classList.remove('active');
-                //             }
-                //         });
-                //     }
-                // });
+                forms.forEach(form => {
+                    form.addEventListener('submit', function(event) {
+                        const checked = form.querySelectorAll('.time_checkbox:checked');
+                        if (checked.length === 0) {
+                            event.preventDefault(); // Prevent form submission if no time slot is selected
+                            alert('Please select a time slot before booking an appointment.');
+                        } else {
+                            // Automatically deselect all other time slots if any time slot is selected
+                            checkboxes.forEach(checkbox => {
+                                if (!checkbox.checked) {
+                                    checkbox.parentElement.classList.remove('active');
+                                }
+                            });
+                        }
+                    });
+                });
             </script>
         </div>
+
     </section>
 @endsection
