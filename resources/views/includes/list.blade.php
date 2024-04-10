@@ -1,4 +1,4 @@
-<div class="row mt-2">
+<div class="row mt-2 mb-4">
     <form action="{{route('appoinment')}}" method="post">
         @csrf
         <input type="hidden" class="d-none" value="{{ $item['email'] }}" name="email">
@@ -24,8 +24,8 @@
                     @foreach ($item['time_schedule'] as $time)
                     <div class="col-md-12">
                         <div class="time_wrap">
-                            <input type="checkbox" class="d-none time_checkbox" name="time" value="{{$time }}" id="SelectTime{{ $time }}" data-item-id="{{ $item['id'] }}" data-time="{{ $time }}">
-                            <label for="SelectTime{{ $time }}" class="form-label">Select</label>
+                            <input type="checkbox" class="d-none time_checkbox" name="time" value="{{$time }}" id="SelectTime{{ $time }}{{ $item['id'] }}" data-item-id="{{ $item['id'] }}" data-time="{{ $time }}{{ $item['id'] }}">
+                            <label for="SelectTime{{ $time }}{{ $item['id'] }}" class="form-label">Select</label>
                             <span>{{ $time }}</span>
                         </div>
                     </div>

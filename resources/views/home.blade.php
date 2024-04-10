@@ -1,5 +1,11 @@
 @extends('layout.base')
-
+@section('css')
+    <style>
+svg {
+  width: 25px;
+}
+    </style>
+@endsection
 
 @section('content')
     <!-- Carousel Start -->
@@ -85,7 +91,7 @@
                     <div class="search">
                         <i class="fa fa-search"></i>
                         <form action="{{route('home')}}">
-                        <input type="text" name="search" class="form-control" placeholder="Hair Cleaning">
+                        <input type="text" name="search" class="form-control" value="{{$search}}" placeholder="Hair Cleaning">
                         <button class="btn ">Search Service</button>
                     </form>
                     </div>
@@ -93,18 +99,19 @@
             </div>
         </div>
 
-        <div class="container mt-4">
+        <div class="container mt-4 mb-4">
             @foreach ($data as $item)
                 @include('includes.list', ['item' => $item])
             @endforeach
+            <span class="mt-4">{{$data->links()}}</span>
             <script>
                 // JavaScript to handle single checkbox selection
                 const checkboxes = document.querySelectorAll('.time_checkbox');
 
                 checkboxes.forEach(checkbox => {
                     checkbox.addEventListener('change', function() {
+                        const itemId = this.getAttribute('data-item-id');
                         if (this.checked) {
-                            const itemId = this.getAttribute('data-item-id');
                             checkboxes.forEach(otherCheckbox => {
                                 if (otherCheckbox !== this && otherCheckbox.getAttribute('data-item-id') === itemId) {
                                     otherCheckbox.checked = false;
@@ -120,6 +127,22 @@
                         }
                     });
                 });
+
+                // JavaScript to handle form submission
+                // document.querySelector('form').addEventListener('submit', function(event) {
+                //     const checked = document.querySelectorAll('.time_checkbox:checked');
+                //     if (checked.length === 0) {
+                //         event.preventDefault(); // Prevent form submission if no time slot is selected
+                //         alert('Please select a time slot before booking an appointment.');
+                //     } else {
+                //         // Automatically deselect all other time slots if any time slot is selected
+                //         checkboxes.forEach(checkbox => {
+                //             if (!checkbox.checked) {
+                //                 checkbox.parentElement.classList.remove('active');
+                //             }
+                //         });
+                //     }
+                // });
             </script>
         </div>
     </section>
