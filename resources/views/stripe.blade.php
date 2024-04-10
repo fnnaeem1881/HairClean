@@ -1,32 +1,28 @@
-<!DOCTYPE html>
+@extends('layout.base')
+@section('css')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+</style>
+@endsection
+@section('content')
 
-<html>
-
-<head>
-
-    <title>Laravel - Stripe Payment Gateway Integration Example - ItSolutionStuff.com</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-</head>
-
-<body>
-
-
-
-    <div class="container">
+    <div class="container mt-4">
 
 
 
-        <h1>Laravel - Stripe Payment Gateway Integration Example <br /> ItSolutionStuff.com</h1>
+        <h1>Payment for {{$item['title']}} and time : {{$time}}</h1>
 
 
 
         <div class="row">
 
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-6 col-md-offset-3 m-auto">
 
                 <div class="panel panel-default credit-card-box">
 
@@ -36,7 +32,7 @@
 
                     </div>
 
-                    <div class="panel-body">
+                    <div class="panel-body card p-5 mb-3 m-auto">
 
 
 
@@ -59,7 +55,9 @@
                             @csrf
 
 
-
+                            <input type="hidden" name="price" value="{{ $item['price'] }}">
+                            <input type="hidden" name="id" value="{{ $item['id'] }}">
+                            <input type="hidden" name="time" value="{{ $time }}">
                             <div class='form-row row'>
 
                                 <div class='col-xs-12 form-group required'>
@@ -73,9 +71,9 @@
 
 
 
-                            <div class='form-row row'>
+                            <div class='form-row row mt-3'>
 
-                                <div class='col-xs-12 form-group card required'>
+                                <div class='col-xs-12 form-group  required'>
 
                                     <label class='control-label'>Card Number</label> <input autocomplete='off'
                                         class='form-control card-number' size='20' type='text'>
@@ -86,7 +84,7 @@
 
 
 
-                            <div class='form-row row'>
+                            <div class='form-row row mt-3'>
 
                                 <div class='col-xs-12 col-md-4 form-group cvc required'>
 
@@ -116,7 +114,7 @@
 
 
 
-                            <div class='form-row row'>
+                            <div class='form-row row mt-4'>
 
                                 <div class='col-md-12 error form-group hide'>
 
@@ -130,12 +128,12 @@
 
 
 
-                            <div class="row">
+                            <div class="row mt-4">
 
                                 <div class="col-xs-12">
 
                                     <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now
-                                        ($100)</button>
+                                        ({{$item['price']}}$)</button>
 
                                 </div>
 
@@ -158,8 +156,6 @@
     </div>
 
 
-
-</body>
 
 
 
@@ -189,6 +185,7 @@
 
 
         $('form.require-validation').bind('submit', function(e) {
+
 
             var $form = $(".require-validation"),
 
@@ -300,4 +297,4 @@
     });
 </script>
 
-</html>
+@endsection

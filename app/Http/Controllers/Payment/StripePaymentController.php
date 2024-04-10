@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Payment;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
 use Stripe;
 
@@ -13,7 +14,7 @@ class StripePaymentController extends Controller
 
     {
 
-        return view('stripe');
+        return view('callback');
 
     }
 
@@ -32,8 +33,16 @@ class StripePaymentController extends Controller
      public function stripePost(Request $request)
 
      {
-
-         Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+        $time=$request->time;
+        $json_data = File::get(public_path('data.json'));
+        $data = json_decode($json_data, true);
+        $item=null;
+        foreach ($data as $SelectData) {
+            if ($SelectData['id']==$request->id) {
+                $item=$SelectData;
+            }
+        }
+        Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
 
 
 
@@ -53,9 +62,9 @@ class StripePaymentController extends Controller
 
                      ],
 
-                 "email" => "demo@gmail.com",
+                 "email" => $item['email'],
 
-                 "name" => "Hardik Savani",
+                 "name" =>  $item['title'],
 
                  "source" => $request->stripeToken
 
@@ -64,17 +73,17 @@ class StripePaymentController extends Controller
 
        $res=  Stripe\Charge::create ([
 
-                 "amount" => 100 * 100,
+                 "amount" => 100 *  $item['price'],
 
                  "currency" => "usd",
 
                  "customer" => $customer->id,
 
-                 "description" => "Test payment from development.",
+                 "description" => $time,
 
                  "shipping" => [
 
-                   "name" => "Jenny Rosen",
+                   "name" => $item['title'],
 
                    "address" => [
 
@@ -99,7 +108,7 @@ class StripePaymentController extends Controller
 
 
 
-         return back();
+         return redirect()->route('payment-callback');
 
      }
 }

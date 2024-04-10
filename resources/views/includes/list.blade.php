@@ -3,6 +3,7 @@
         @csrf
         <input type="hidden" class="d-none" value="{{ $item['email'] }}" name="email">
         <input type="hidden" class="d-none" value="{{ $item['id'] }}" name="id">
+        <input type="hidden" class="d-none" value="{{ $item['price'] }}" name="price">
         <div class="list_wrap" id="item_{{ $item['id'] }}">
             <div class="logo_des_wrap">
                 <div class="logo_sub_wrap">
@@ -23,7 +24,7 @@
                     @foreach ($item['time_schedule'] as $time)
                     <div class="col-md-12">
                         <div class="time_wrap">
-                            <input type="checkbox" class="d-none time_checkbox" name="time[]" id="SelectTime{{ $time }}" data-item-id="{{ $item['id'] }}" data-time="{{ $time }}">
+                            <input type="checkbox" class="d-none time_checkbox" name="time" value="{{$time }}" id="SelectTime{{ $time }}" data-item-id="{{ $item['id'] }}" data-time="{{ $time }}">
                             <label for="SelectTime{{ $time }}" class="form-label">Select</label>
                             <span>{{ $time }}</span>
                         </div>

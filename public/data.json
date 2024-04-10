@@ -10,7 +10,8 @@
             "01:30 PM",
             "03:00 PM"
         ],
-        "email": "email1@example.com"
+        "email": "email1@example.com",
+        "price": 500
     },
     {
         "id": 2,
@@ -23,7 +24,8 @@
             "02:30 PM",
             "05:00 PM"
         ],
-        "email": "email2@example.com"
+        "email": "email2@example.com",
+        "price": 600
     },
     {
         "id": 3,
@@ -36,6 +38,21 @@
             "12:00 PM",
             "04:30 PM"
         ],
-        "email": "email3@example.com"
+        "email": "email3@example.com",
+        "price": 700
+    },
+    {
+        "id": 4,
+        "logo": "assets/img/gallery-1.jpg",
+        "title": "Title 4",
+        "subtitle": "Subtitle 4",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "time_schedule": [
+            "09:00 AM",
+            "12:00 PM",
+            "04:30 PM"
+        ],
+        "email": "email4@example.com",
+        "price": 900
     }
 ]

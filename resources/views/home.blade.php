@@ -84,8 +84,10 @@
                 <div class="col-md-12">
                     <div class="search">
                         <i class="fa fa-search"></i>
-                        <input type="text" class="form-control" placeholder="Hair Cleaning">
+                        <form action="{{route('home')}}">
+                        <input type="text" name="search" class="form-control" placeholder="Hair Cleaning">
                         <button class="btn ">Search Service</button>
+                    </form>
                     </div>
                 </div>
             </div>
