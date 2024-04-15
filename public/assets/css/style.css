@@ -822,7 +822,7 @@
     width: 25%;
     float: left;
     padding: 20px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -832,7 +832,7 @@
     background: black;
     color: #fff;
     padding: 12px 19px;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 .time_wrap.active {
     background: black;
@@ -912,6 +912,7 @@
     .book_appointment_wrap {
         width: 100%;
         padding: 10px;
+        text-align: center;
     }
     .time_wrap label {
         padding: 2px 25px;
@@ -958,6 +959,8 @@
     .book_appointment_wrap {
         width: 100%;
         padding: 10px;
+        margin: auto;
+        text-align: center;
     }
     .time_wrap label {
         display: flex;
@@ -1009,10 +1012,12 @@
         width: 25%;
         float: left;
         padding: 20px;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         height: 100%;
+        margin: auto;
+        text-align: center;
     }
     /* .time_wrap label {
         display: flex;
@@ -1029,4 +1034,7 @@
         padding: 0px 20px !important;
 
     }
+}
+.book_appointment_wrap span {
+    display: block;
 }

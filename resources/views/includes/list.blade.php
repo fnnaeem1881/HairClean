@@ -33,6 +33,9 @@
                 </div>
             </div>
             <div class="book_appointment_wrap">
+                <span>
+                Price: {{$item['price']}}$
+                     </span>
                 <button type="submit" class="btn btn_custom">Book an appointment</button>
             </div>
         </div>
