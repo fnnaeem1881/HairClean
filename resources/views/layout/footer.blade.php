@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-md-4 text-center text-md-end text-white">
 
-                        {{-- Designed By <a class="border-bottom" href="#">Mehedi Hasan</a> --}}
+                        {{-- Designed By <a class="border-bottom" href="#"></a> --}}
                     </div>
                 </div>
             </div>
