@@ -36,6 +36,7 @@
 .btn-square {
     width: 32px;
     height: 32px;
+    background: white;
 }
 
 .btn-sm-square {
@@ -71,7 +72,7 @@
 
 .btn-light-outline-0 {
     border: 0;
-    color: var(--bs-primary) !important;
+    color: black;
 }
 
 .btn-primary-outline-0:hover {
@@ -80,8 +81,8 @@
 }
 
 .btn-light-outline-0:hover {
-    background: var(--bs-secondary) !important;
-    color: var(--bs-white) !important;
+    background: #AF6E4D !important;
+    color: white;
 }
 
 /*** Topbar Start ***/
@@ -92,7 +93,7 @@
 
 .topbar {
     padding: 10px 0;
-    background: var(--bs-secondary) !important;
+    background: #F4F4DB;
 }
 
 /*** Topbar End ***/
@@ -108,7 +109,7 @@
 .navbar .navbar-nav .nav-link.active,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .sticky-top.bg-white .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: #AF6E4D !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -740,6 +741,7 @@
 .search input::placeholder {
     color: #000;
     font-size: 20px;
+    opacity: .5;
 }
 
 
@@ -1037,4 +1039,58 @@
 }
 .book_appointment_wrap span {
     display: block;
+}
+
+
+.topbar a {
+    color: #000 !important;
+}
+
+.topbar i {
+    color: #000 !important;
+}
+
+
+nav.navbar.navbar-light.navbar-expand-xl h1 {
+    color: #AF6E4D !important;
+}
+
+
+.d-flex.align-items-center.flex-nowrap.pt-xl-0 a {
+    box-shadow: 0px 0px 10px 0px black;
+    background: #AF6E4D !important;
+}
+
+
+a.btn.btn-primary.btn-primary-outline-0.btn-md-square.rounded-circle.back-to-top {
+    background: #AF6E4D !important;
+}
+
+
+.row.g-4.align-items-center a {
+    color: #AF6E4D !important;
+}
+
+
+a.btn.btn-primary.btn-primary-outline-0.rounded-pill.py-3.px-4.ms-4 {
+    box-shadow: 0px 0px 10px 0px black;
+    background: #AF6E4D !important;
+}
+
+
+.col-lg-7.aboutWrap i {
+    color: black !important;
+}
+
+.contactSection i {
+    color: black !important;
+}
+
+.col-lg-7.aboutWrap p:first-child {
+    color: #AF6E4D !important;
+}
+
+
+.contactSection .text-center.p-4.rounded-bottom.bg-primary {
+    background: #AF6E4D !important;
 }

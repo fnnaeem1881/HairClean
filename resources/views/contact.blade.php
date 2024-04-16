@@ -3,7 +3,7 @@
 
  <!-- Contact Start -->
 
-<div class="container-fluid pb-5">
+<div class="container-fluid pb-5 contactSection">
     <div class="container py-5">
         <div class="row g-4 align-items-center">
             <div class="col-12">

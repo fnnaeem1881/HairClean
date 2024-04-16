@@ -10,7 +10,7 @@
 
                         {{-- <img src="{{ asset('assets/img/man-hair-clean.jpg') }}" class="img-fluid rounded" alt="Man Hair Clean"> --}}
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 aboutWrap">
                         <div>
                             <p class="fs-4 text-uppercase text-primary">Hair Clean</p>
                             <h1 class="display-4 mb-4">Get the Perfect Look for Men</h1>
