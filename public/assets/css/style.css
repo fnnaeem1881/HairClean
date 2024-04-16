@@ -1094,3 +1094,9 @@ a.btn.btn-primary.btn-primary-outline-0.rounded-pill.py-3.px-4.ms-4 {
 .contactSection .text-center.p-4.rounded-bottom.bg-primary {
     background: #AF6E4D !important;
 }
+
+
+button.btn.btn-primary.btn-lg.btn-block {
+    background: #AF6E4D !important;
+    color:#ffff
+}
