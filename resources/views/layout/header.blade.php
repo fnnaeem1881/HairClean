@@ -7,7 +7,7 @@
                         <div class="col-lg-8">
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="me-4 text-light"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>+4812365472</a>
                                 <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
                             </div>
 

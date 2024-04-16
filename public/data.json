@@ -1,58 +1,72 @@
 [
     {
         "id": 1,
-        "logo": "assets/img/gallery-1.jpg",
-        "title": "Title 1",
-        "subtitle": "Subtitle 1",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title": "Shampoo and Blow Dry",
+        "subtitle": "Hair Care",
+        "paragraph": "Experience professional shampooing and blow-drying service, essential for maintaining healthy, beautiful hair. Our experts use quality products tailored to your hair type, leaving it sleek, smooth, and voluminous. Convenient time slots available throughout the day. Contact us at email1@example.com to book your appointment!",
         "time_schedule": [
             "12:30 AM",
             "01:30 PM",
             "03:00 PM"
         ],
         "email": "email1@example.com",
-        "price": 500
+        "price": 500,
+        "logo": "assets/img/shampo.jpeg"
     },
     {
         "id": 2,
-        "logo": "assets/img/gallery-2.jpg",
-        "title": "Title 2",
-        "subtitle": "Subtitle 2",
-        "paragraph": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "title": "Hair Trim",
+        "subtitle": "Hair Care",
+        "paragraph": "Achieve your desired hair length and style with precision hair trimming. Our skilled stylists provide expert cuts tailored to your preferences, ensuring every strand is perfectly trimmed. Flexible scheduling options available, including evening appointments. Contact us at email2@example.com to schedule your trim!",
         "time_schedule": [
-            "10:00 AM",
-            "02:30 PM",
-            "05:00 PM"
+            "12:30 AM",
+            "01:30 PM",
+            "03:00 PM"
         ],
         "email": "email2@example.com",
-        "price": 600
+        "price": 700,
+        "logo": "assets/img/trim.jpeg"
     },
     {
         "id": 3,
-        "logo": "assets/img/gallery-3.jpg",
-        "title": "Title 3",
-        "subtitle": "Subtitle 3",
-        "paragraph": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "title": "Plaited Cornrows",
+        "subtitle": "Hairstyling",
+        "paragraph": "Transform your look with professional plaited cornrows. Our skilled stylists provide expert braiding services, creating stunning cornrow designs that suit your style. Flexible scheduling options available. Contact us at email3@example.com to book your appointment!",
         "time_schedule": [
-            "09:00 AM",
-            "12:00 PM",
-            "04:30 PM"
+            "12:30 AM",
+            "01:30 PM",
+            "03:00 PM"
         ],
         "email": "email3@example.com",
-        "price": 700
+        "price": 800,
+        "logo": "assets/img/plaw.jpg"
     },
     {
         "id": 4,
-        "logo": "assets/img/gallery-1.jpg",
-        "title": "Title 4",
-        "subtitle": "Subtitle 4",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title": "Hair Extensions",
+        "subtitle": "Hair Care",
+        "paragraph": "Enhance your hair's length and volume with professional hair extensions. Our experts use high-quality extensions to achieve natural-looking results. Flexible scheduling options available. Contact us at email4@example.com to schedule your consultation!",
         "time_schedule": [
-            "09:00 AM",
-            "12:00 PM",
-            "04:30 PM"
+            "12:30 AM",
+            "01:30 PM",
+            "03:00 PM"
         ],
         "email": "email4@example.com",
-        "price": 900
+        "price": 800,
+        "logo": "assets/img/ex.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Pedicure Manicure",
+        "subtitle": "Nail Care",
+        "paragraph": "Indulge in a complete pedicure and manicure service for well-groomed hands and feet. Our skilled technicians provide expert nail care, leaving your hands and feet looking and feeling rejuvenated. Flexible scheduling options available. Contact us at email5@example.com to book your appointment!",
+        "time_schedule": [
+            "12:30 AM",
+            "01:30 PM",
+            "03:00 PM"
+        ],
+        "email": "email5@example.com",
+        "price": 900,
+        "logo": "assets/img/images.jpeg"
     }
 ]

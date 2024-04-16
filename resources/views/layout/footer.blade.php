@@ -18,7 +18,7 @@
                             <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 08:00 pm</span></p>
                             <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00 am – 05:00 pm</span></p>
                             <h4 class="my-4 text-white">Address</h4>
-                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 123 ranking street North tower New York, USA</p>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Warsaw Poland</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-4">
@@ -29,7 +29,7 @@
                             <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
                             <h4 class="my-4 text-white">Contact Us</h4>
                             <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> info@example.com</p>
-                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+012) 3456 7890 123</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> +4812365472</p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Hair Cut</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Hair Clean</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-4">
                         <div class="d-flex justify-content-center">
@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-md-4 text-center text-md-end text-white">
 
-                        Designed By <a class="border-bottom" href="#">Mehedi Hasan</a>
+                        {{-- Designed By <a class="border-bottom" href="#">Mehedi Hasan</a> --}}
                     </div>
                 </div>
             </div>
